@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EquipmentComponent implements OnInit {
 
+  equipment: string[] = [
+    'Telescope',
+    'Drill',
+    'SpaceSuit',
+    'Microscope'
+  ];
+
   constructor() { }
 
   ngOnInit() {
