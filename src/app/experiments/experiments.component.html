@@ -8,3 +8,13 @@
   </ul>
 </div>
 <hr>
+
+<div class = "displayBox">
+  <h3>Laboratory: {{laboratory.length}}/{{maxItems}} Lab filled</h3>
+  <ol>
+      <li *ngFor="let experiment of laboratory">{{experiment.name}}</li>
+  </ol>
+  <p>Projects in Lab: {{labProjects}}</p>
+  <p [class.nearMaxMass]="nearCapacity">Lab space left: {{maxItems - labProjects}}</p>
+  <button (click)="laboratory=[]; labProjects=0; nearCapacity = false">Clear Lab</button>
+</div>

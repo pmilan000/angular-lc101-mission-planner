@@ -16,11 +16,12 @@ export class ExperimentsComponent implements OnInit {
    laboratory: object[] = [];
    labProjects: number = 0;
    maxItems: number = 3;
+
    constructor() { }
 
    ngOnInit() { }
 
-   addProjects(item: object) : boolean {
+   addProjects(item: object) {
     this.laboratory.push(item);
     this.labProjects++;
     return this.laboratory;

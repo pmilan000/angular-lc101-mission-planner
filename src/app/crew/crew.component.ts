@@ -24,7 +24,7 @@ export class CrewComponent implements OnInit {
 
   ngOnInit() { }
 
-  addCrewMember(member : object) : boolean {
+  addCrewMember(member : object) {
     if (this.crew.includes(member)){
       this.inCrew = true;
     } else {
